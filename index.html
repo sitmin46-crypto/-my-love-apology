@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Chit Thu ♡</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+    background: linear-gradient(145deg, #fff0f5, #ffe0eb, #fff7fa);
+    color: #74384f;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 55px 20px;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.badge {
+    background: white;
+    padding: 9px 18px;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px #e7a9c355;
+}
+
+h1 {
+    font-size: clamp(38px, 10vw, 60px);
+    color: #d94f83;
+    margin-bottom: 18px;
+    line-height: 1.2;
+}
+
+h2 {
+    color: #d94f83;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.9;
+    font-size: 15px;
+}
+
+.subtitle {
+    max-width: 330px;
+    margin-bottom: 28px;
+}
+
+button {
+    border: none;
+    padding: 14px 23px;
+    border-radius: 30px;
+    background: #e85d91;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 7px;
+    box-shadow: 0 5px 15px #d94f8340;
+    transition: 0.25s;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.secondary {
+    background: white;
+    color: #d94f83;
+}
+
+.heart {
+    font-size: 75px;
+    animation: heartbeat 1.3s infinite;
+    margin: 15px;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.13); }
+}
+
+.card {
+    background: #ffffffd9;
+    border: 1px solid #ffffff;
+    border-radius: 24px;
+    padding: 25px 20px;
+    max-width: 420px;
+    width: 100%;
+    margin: 18px auto;
+    box-shadow: 0 10px 35px #c65a8315;
+}
+
+.meter {
+    height: 15px;
+    background: #f8d8e5;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 18px 0;
+}
+
+.fill {
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    transition: width 1.5s ease;
+}
+
+.guilt {
+    background: linear-gradient(90deg, #e994ac, #d94f83);
+}
+
+.love {
+    background: linear-gradient(90deg, #ff91b9, #e53277);
+}
+
+.meter-number {
+    font-size: 30px;
+    color: #d94f83;
+    font-weight: bold;
+}
+
+.letter {
+    display: none;
+    text-align: left;
+    white-space: pre-line;
+    background: white;
+    padding: 23px;
+    border-radius: 20px;
+    margin-top: 20px;
+    line-height: 2;
+    animation: appear 0.5s ease;
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.memory-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    max-width: 420px;
+    margin: 20px auto;
+}
+
+.memory {
+    background: white;
+    border-radius: 18px;
+    padding: 22px 8px;
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.memory span {
+    font-size: 32px;
+}
+
+.promise {
+    text-align: left;
+    margin: 12px 0;
+    padding: 12px;
+    background: #fff5f9;
+    border-radius: 12px;
+}
+
+footer {
+    padding: 35px 15px 50px;
+    font-size: 13px;
+}
+
+.floating-heart {
+    position: fixed;
+    bottom: -30px;
+    animation: floatUp 7s linear forwards;
+    pointer-events: none;
+    z-index: 10;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh) rotate(30deg);
+        opacity: 0;
+    }
+}
+
+#finalMessage {
+    display: none;
+    margin-top: 20px;
+    line-height: 1.9;
+}
+
+.small {
+    font-size: 12px;
+    opacity: 0.75;
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <div class="badge">A little website made with love ♡</div>
+
+    <div class="heart">💗</div>
+
+    <h1>I'm Sorry,<br>Chit Thu</h1>
+
+    <p class="subtitle">
+        I made this little corner of the internet
+        just for you. There's something I want
+        to tell you from my heart.
+    </p>
+
+    <button onclick="scrollToSection('apology')">
+        Open my heart 💌
+    </button>
+
+    <p class="small" style="margin-top:25px">
+        Made with love, especially for you ♡
+    </p>
+
+</section>
+
+
+<section id="apology">
+
+    <h2>A little apology 🥺</h2>
+
+    <div class="card">
+        <div style="font-size:45px">🧸💗</div>
+
+        <p>
+            Chit Thu, I know things didn't go the way
+            we wanted them to.
+        </p>
+
+        <br>
+
+        <p>
+            I thought you were okay with me going out,
+            but I understand now that we may not have
+            understood each other the same way.
+        </p>
+
+        <br>
+
+        <p>
+            And when I came back and fell asleep without
+            talking to you, I can understand why that
+            hurt you.
+        </p>
+
+        <br>
+
+        <p>
+            I'm sorry for not communicating better
+            and for not being more thoughtful about
+            your feelings.
+        </p>
+    </div>
+
+</section>
+
+
+<section id="meters">
+
+    <h2>The very serious meters 📊</h2>
+
+    <div class="card">
+
+        <p>My guilty level 🥺</p>
+
+        <div class="meter">
+            <div class="fill guilt" id="guiltBar"></div>
+        </div>
+
+        <div class="meter-number">85%</div>
+
+        <p class="small">
+            I know saying sorry is only the beginning.
+        </p>
+
+    </div>
+
+    <div class="card">
+
+        <p>My love for Chit Thu ❤️</p>
+
+        <div class="meter">
+            <div class="fill love" id="loveBar"></div>
+        </div>
+
+        <div class="meter-number">1000%</div>
+
+        <p class="small">
+            Apparently, the meter isn't big enough.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="letterSection">
+
+    <h2>A letter for you 💌</h2>
+
+    <p>
+        There are things I want to say
+        that are better written from the heart.
+    </p>
+
+    <button onclick="toggleLetter()">
+        Open your letter 💗
+    </button>
+
+    <div class="letter" id="loveLetter">
+My Chit Thu, ♡
+
+I'm sorry, baby.
+
+I went out thinking we understood each other,
+but I realize now that I shouldn't have assumed
+everything was okay just because you said
+I could do what I wanted.
+
+I should have talked to you more clearly.
+And after I came back, I should have made time
+for you instead of falling asleep without
+talking to you.
+
+I'm not writing this to make excuses.
+I just want you to know that I care about
+your feelings, even when I don't understand
+them right away.
+
+You mean so much to me.
+I don't want one difficult moment to become
+something that keeps hurting us.
+
+I want to learn how to love you better,
+listen to you better, and communicate
+with you more honestly.
+
+I'm sorry for hurting you, Chit Thu.
+
+You don't have to forgive me immediately.
+I'll listen whenever you're ready to talk.
+
+I love you. ♡
+
+Always your person,
+with love 💗
+    </div>
+
+</section>
+
+
+<section id="memories">
+
+    <h2>Little things I treasure 🧸</h2>
+
+    <p>
+        It's the little moments with you
+        that make my days special.
+    </p>
+
+    <div class="memory-grid">
+
+        <div class="memory">
+            <span>📞</span>
+            <p>Our late-night calls</p>
+        </div>
+
+        <div class="memory">
+            <span>☕</span>
+            <p>Our little dates</p>
+        </div>
+
+        <div class="memory">
+            <span>🫶</span>
+            <p>Our silly moments</p>
+        </div>
+
+        <div class="memory">
+            <span>💗</span>
+            <p>Simply being us</p>
+        </div>
+
+    </div>
+
+    <p class="small">
+        Our memories are even more beautiful
+        when I can see them with you.
+    </p>
+
+</section>
+
+
+<section id="promises">
+
+    <h2>What I want to do better 🌷</h2>
+
+    <div class="card">
+
+        <div class="promise">
+            💗 Communicate instead of assuming.
+        </div>
+
+        <div class="promise">
+            🫶 Listen to your feelings without dismissing them.
+        </div>
+
+        <div class="promise">
+            💌 Make time to talk, especially after a disagreement.
+        </div>
+
+        <div class="promise">
+            🌷 Show you through my actions that I care.
+        </div>
+
+        <p style="margin-top:20px">
+            I know promises matter most when I
+            actually keep them.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section id="final">
+
+    <div class="heart">💗</div>
+
+    <h2>Chit Thu, can we talk? 🥺</h2>
+
+    <p>
+        I miss being okay with you.
+        Whenever you're ready, I'd love
+        to listen to how you feel.
+    </p>
+
+    <br>
+
+    <button onclick="showMessage()">
+        I'm ready to talk 💌
+    </button>
+
+    <button class="secondary" onclick="showTimeMessage()">
+        I need a little time 🌷
+    </button>
+
+    <div id="finalMessage" class="card"></div>
+
+</section>
+
+
+<footer>
+    <p>Made with all my heart for Chit Thu ♡</p>
+    <p>One little website, a thousand feelings. 💗</p>
+</footer>
+
+
+<script>
+
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: "smooth"
+    });
+}
+
+function toggleLetter() {
+    const letter = document.getElementById("loveLetter");
+
+    if (letter.style.display === "block") {
+        letter.style.display = "none";
+    } else {
+        letter.style.display = "block";
+    }
+}
+
+function showMessage() {
+    const box = document.getElementById("finalMessage");
+
+    box.style.display = "block";
+    box.innerHTML =
+        "Thank you for being willing to talk, Chit Thu. 💗 " +
+        "I'll listen to you with an open heart. " +
+        "You matter to me, and I want us to understand each other better. 🫶";
+}
+
+function showTimeMessage() {
+    const box = document.getElementById("finalMessage");
+
+    box.style.display = "block";
+    box.innerHTML =
+        "That's okay, Chit Thu. 🌷 Take the time you need. " +
+        "I won't rush you. Whenever you're ready, " +
+        "I'll be here to listen. 💗";
+}
+
+window.addEventListener("load", function() {
+    setTimeout(function() {
+        document.getElementById("guiltBar").style.width = "85%";
+        document.getElementById("loveBar").style.width = "100%";
+    }, 300);
+});
+
+setInterval(function() {
+    const heart = document.createElement("div");
+
+    heart.className = "floating-heart";
+    heart.innerHTML = ["💗", "💕", "♡", "🌸"][
+        Math.floor(Math.random() * 4)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (15 + Math.random() * 18) + "px";
+    heart.style.animationDuration = (5 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(function() {
+        heart.remove();
+    }, 9000);
+
+}, 1000);
+
+</script>
+
+</body>
+</html>
